@@ -9,7 +9,35 @@ import SwiftUI
 
 struct WalletListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            HStack {
+                
+                Text("Recent Transactions")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.black)
+                
+                Spacer()
+                
+                HStack {
+                    
+                    Text("Sort By")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                    
+                    Image("icons8-down-button-50")
+                        .resizable()
+                        .frame(width: 22,height: 22)
+                }
+
+            }
+            .padding(.horizontal,10)
+        }
+        
+        
     }
 }
 
